@@ -53,6 +53,7 @@ table {
 
 * {
 	color: white;
+	box-sizing: border-box;
 }
 
 header {
@@ -185,15 +186,10 @@ footer {
 		padding-bottom: 3%;
 	}
 
-	label {
-		background-color: yellow;
-	}
-
 	input {
 		width: 87%;
 		padding: 2%;
 		margin-bottom: 2%;
-		background-color: yellowgreen;
 	}
 
 	#form li {
@@ -349,8 +345,9 @@ footer {
 		width: 100%;
 	}
 
-	#portfolio img {
-		width: 100%;
+	.wrapper {
+		display: grid;
+		grid-template-columns: [first] 1fr [second] 1fr;
 	}
 
 	#video {
@@ -424,15 +421,10 @@ footer {
 		padding-bottom: 3%;
 	}
 
-	label {
-		background-color: yellow;
-	}
-
 	input {
 		width: 87%;
 		padding: 2%;
 		margin-bottom: 2%;
-		background-color: yellowgreen;
 	}
 
 	#form li {

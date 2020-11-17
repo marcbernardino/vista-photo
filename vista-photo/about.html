@@ -3,13 +3,16 @@
 <head>
 	<title>Vista Photography</title>
 	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Abel&family=Oranienbaum&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Marc Bernardino">
 	<meta name="description" content="Portfolio website">
-	<link rel="icon" href="aperture.svg">
+	<link rel="icon" href="images/aperture.svg">
 </head>
 <body>
 	<header>
-		<a href="index.html"><img src="aperture.png" alt="logo"></a>
+		<a href="index.html"><img src="images/aperture.png" alt="logo"></a>
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -18,44 +21,48 @@
 			</ul>
 		</nav>
 	</header>
-	<img src="caleb.jpg" alt="photo of owner, caleb hall">
-	<section>
-		<h2>About me</h2>
-		<p>My name is Caleb Hall and I have been capturing lifelong memories for my clients for over 20 years. I’m currently based out of Phoenix, Arizona and I got my bachelor’s degree in photography and videography at the New York film academy. I travel through-out Arizona for my clients including but not limited to: Mesa, Chandler, Phoenix, Gilbert, and Scottsdale. I have a dog named Hercules and a cat named Lester. Please contact me if you have any questions!</p>
-	</section>
-	<section>
-		<h2>Pricing</h2>
-		<p>These prices are for references and can vary depending on your situation.</p>
-		<ul>
-			<li>Gold: 300 USD, ~15 edited images, 1-hour photo session, online upload. OR 2-hour video capture, 10-minute video.</li>
-			<li>Platinum: 700 USD, ~30 edited images, 2-hour photo session, up to two locations, online upload, up to three printed images. OR 3-hour video capture, 20- minute video.</li>
-			<li>Diamond: 1000 USD, ~ 45 edited images, a photo book with 10 images, a 3-hour photo session, up to three locations, online upload. OR 5-hour video capture, 30-minute video</li>
-		</ul>
-	</section>
-	<section>
-		<h2>Contact</h2>
-		<form>
-			<label for="fName">First Name:</label>
-			<input type="text" name="fName" id="fName">
-			<label for="lName">Last Name:</label>
-			<input type="text" name="lName" id="lName"><br>
-			<label for="email">Email:</label>
-			<input type="email" name="email" placeholder="example123@email.com" id="email">
-			<label for="phone">Phone Number:</label>
-			<input type="tel" name="phone" placeholder="123-456-7890" id="phone"><br>
-			<label>Type of work:</label>
-			<input type="checkbox" name="photo" id="photo">
-			<label for="photo">Photography</label>
-			<input type="checkbox" name="video" id="video">
-			<label for="video">Videography</label><br>
-			<label for="comments">Comments</label>
-			<textarea name="comments" id="comments"></textarea>
-		</form>
-	</section>
+	<main>
+		<img src="images/caleb.jpg" alt="photo of owner, caleb hall">
+		<section>
+			<h2>About me</h2>
+			<p>My name is Caleb Hall and I have been capturing lifelong memories for my clients for over 20 years. I’m currently based out of Phoenix, Arizona and I got my bachelor’s degree in photography and videography at the New York film academy. I travel through-out Arizona for my clients including but not limited to: Mesa, Chandler, Phoenix, Gilbert, and Scottsdale. I have a dog named Hercules and a cat named Lester. Please contact me if you have any questions!</p>
+		</section>
+		<section id="form">
+			<h2>Pricing</h2>
+			<p>These prices are for references and can vary depending on your situation.</p>
+			<ul>
+				<li>Gold: 300 USD, ~15 edited images, 1-hour photo session, online upload. OR 2-hour video capture, 10-minute video.</li>
+				<li>Platinum: 700 USD, ~30 edited images, 2-hour photo session, up to two locations, online upload, up to three printed images. OR 3-hour video capture, 20- minute video.</li>
+				<li>Diamond: 1000 USD, ~ 45 edited images, a photo book with 10 images, a 3-hour photo session, up to three locations, online upload. OR 5-hour video capture, 30-minute video</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Contact</h2>
+			<form>
+				<div class="wrapper2">
+					<label for="fName">First Name:</label>
+					<input type="text" name="fName" id="fName">
+					<label for="lName">Last Name:</label>
+					<input type="text" name="lName" id="lName">
+					<label for="email">Email:</label>
+					<input type="email" name="email" placeholder="example123@email.com" id="email">
+					<label for="phone">Phone Number:</label>
+					<input type="tel" name="phone" placeholder="123-456-7890" id="phone">
+					<label>Type of work:</label>
+					<input type="checkbox" name="photo" id="photo">
+					<label for="photo">Photography</label>
+					<input type="checkbox" name="video" id="video">
+					<label for="video">Videography</label>
+					<label for="comments">Comments</label>
+					<textarea name="comments" id="comments"></textarea>
+				</div>
+			</form>
+		</section>
+	</main>
 	<footer>
-		<p>For educational purposes only | calebHall@vistaphoto.com | 123-456-7890</p>
-		<a href="facebook.com"><img src="facebook.png" alt="facebook logo that links to vista photo facebook page"></a>
-		<a href="instagram.com"><img src="instagram.png" alt="instagram logo that links to vista photo instagram page"></a>
+		<address>for educational purposes only calebHall@vistaphoto.com 123-456-7890</address>
+		<a href="facebook.com"><img src="images/facebook.png" alt="facebook logo that links to vista photo facebook page"></a>
+		<a href="instagram.com"><img src="images/instagram.png" alt="instagram logo that links to vista photo instagram page"></a>
 	</footer>
 </body>
 </html>

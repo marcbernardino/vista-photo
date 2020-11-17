@@ -3,13 +3,16 @@
 <head>
 	<title>Vista Photography</title>
 	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Abel&family=Oranienbaum&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Marc Bernardino">
 	<meta name="description" content="Portfolio website">
-	<link rel="icon" href="aperture.svg">
+	<link rel="icon" href="images/aperture.svg">
 </head>
 <body>
 	<header>
-		<a href="index.html"><img src="aperture.png" alt="logo"></a>
+		<a href="index.html"><img src="images/aperture.png" alt="logo"></a>
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -18,31 +21,38 @@
 			</ul>
 		</nav>
 	</header>
-	<section>
-		<h2>Photography</h2>
-		<h3>Portraits</h3>
-		<img src="portrait_beanie.jpg" alt="studio portrait with a woman wearing a beanie">
-		<img src="portrait_pink.jpg" alt="studio portrait of a woman with a pink background">
-		<img src="portrait_sky.jpg" alt="photograph of a man with the sky showing in the background">
-		<h3>Weddings</h3>
-		<img src="wedding_stairs.jpg" alt="bride and groom photo on stairs">
-		<img src="wedding_kiss.jpg" alt="close up of wedding couple staring into each other">
-		<img src="wedding_lights.jpg" alt="bride and groom holding hands on podium with lights on the ceiling">
-		<h3>Events</h3>
-		<img src="event_concert.jpg" alt="">
-		<img src="event_lights.jpg" alt="">
-		<img src="event_table.jpg" alt="">
-	</section>
-	<section>
-		<h2>Videography</h2>
-		<video controls=""><source src="video_drone.mp4" type="video/mp4"></video>
-		<video controls=""><source src="video_festival.mp4" type="video/mp4"></video>
-		<video controls=""><source src="video_dj.mp4" type="video/mp4"></video>
-	</section>
+	<main>
+		<section id="portfolio">
+			<h2>Photography</h2>
+			<h3>Portraits</h3>
+			<div class="wrapper">
+				<img class="beanie" src="images/portrait_beanie.jpg" alt="studio portrait with a woman wearing a beanie">
+				<img class="pink" src="images/portrait_pink_desktop.jpg" alt="studio portrait of a woman with a pink background">
+				<img class="sky" src="images/portrait_sky.jpg" alt="photograph of a man with the sky showing in the background">
+			</div>
+			<h3>Weddings</h3>
+			<div class="wrapper">
+				<img class="stairs" src="images/wedding_stairs.jpg" alt="bride and groom photo on stairs">
+				<img class="lights" src="images/wedding_lights.jpg" alt="bride and groom holding hands on podium with lights on the ceiling">
+				<img class="kiss" src="images/wedding_kiss.jpg" alt="close up of wedding couple staring into each other">
+			</div>
+			<h3>Events</h3>
+			<div class="wrapper">
+				<img class="elights" src="images/event_lights.jpg" alt="">
+				<img class="table" src="images/event_table.jpg" alt="">
+			</div>
+		</section>
+		<section id="video">
+			<h2>Videography</h2>
+			<video controls=""><source src="videos/video_drone.mp4" type="video/mp4"></video>
+			<video controls=""><source src="videos/video_festival.mp4" type="video/mp4"></video>
+			<video controls=""><source src="videos/video_dj.mp4" type="video/mp4"></video>
+		</section>
+	</main>
 	<footer>
-		<p>For educational purposes only | calebHall@vistaphoto.com | 123-456-7890</p>
-		<a href="facebook.com"><img src="facebook.png" alt="facebook logo that links to vista photo facebook page"></a>
-		<a href="instagram.com"><img src="instagram.png" alt="instagram logo that links to vista photo instagram page"></a>
+		<address>for educational purposes only | calebHall@vistaphoto.com | 123-456-7890</address>
+		<a href="facebook.com"><img src="images/facebook.png" alt="facebook logo that links to vista photo facebook page"></a>
+		<a href="instagram.com"><img src="images/instagram.png" alt="instagram logo that links to vista photo instagram page"></a>
 	</footer>
 </body>
 </html>
